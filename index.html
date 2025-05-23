@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Injection Site Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Injection Site Tracker for Kevin</h1>
+  <form id="injectionForm">
+    <label for="medication">Medication:</label>
+    <select id="medication">
+      <option value="Syrizi">Syrizi</option>
+      <option value="Zepbound">Zepbound</option>
+    </select>
+
+    <label for="site">Injection Site:</label>
+    <select id="site">
+      <option value="Left Thigh">Left Thigh</option>
+      <option value="Right Thigh">Right Thigh</option>
+      <option value="Left Abdomen">Left Abdomen</option>
+      <option value="Right Abdomen">Right Abdomen</option>
+      <option value="Left Arm">Left Arm</option>
+      <option value="Right Arm">Right Arm</option>
+    </select>
+
+    <button type="submit">Log Injection</button>
+  </form>
+
+  <h2>Injection History</h2>
+  <ul id="historyList"></ul>
+
+  <h3>Suggested Next Site: <span id="nextSite">N/A</span></h3>
+
+  <script src="script.js"></script>
+</body>
+</html>
